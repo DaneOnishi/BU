@@ -13,6 +13,9 @@
 		41290AB626A9B2C000AA4F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41290AB426A9B2C000AA4F00 /* Main.storyboard */; };
 		41290AB826A9B2C200AA4F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41290AB726A9B2C200AA4F00 /* Assets.xcassets */; };
 		41290ABB26A9B2C200AA4F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41290AB926A9B2C200AA4F00 /* LaunchScreen.storyboard */; };
+		41290AC326AA635800AA4F00 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC226AA635800AA4F00 /* Model.swift */; };
+		41290AC526AA7CB300AA4F00 /* DoorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */; };
+		41290AC726AA7DFA00AA4F00 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		41290AB726A9B2C200AA4F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41290ABA26A9B2C200AA4F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41290ABC26A9B2C200AA4F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41290AC226AA635800AA4F00 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsViewController.swift; sourceTree = "<group>"; };
+		41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				41290AB726A9B2C200AA4F00 /* Assets.xcassets */,
 				41290AB926A9B2C200AA4F00 /* LaunchScreen.storyboard */,
 				41290ABC26A9B2C200AA4F00 /* Info.plist */,
+				41290AC226AA635800AA4F00 /* Model.swift */,
+				41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */,
+				41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */,
 			);
 			path = BU;
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 			files = (
 				41290AB326A9B2C000AA4F00 /* ViewController.swift in Sources */,
 				41290AAF26A9B2C000AA4F00 /* AppDelegate.swift in Sources */,
+				41290AC726AA7DFA00AA4F00 /* DoorViewController.swift in Sources */,
 				41290AB126A9B2C000AA4F00 /* SceneDelegate.swift in Sources */,
+				41290AC526AA7CB300AA4F00 /* DoorsViewController.swift in Sources */,
+				41290AC326AA635800AA4F00 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
