@@ -16,14 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="temporaria1" translatesAutoresizingMaskIntoConstraints="NO" id="j0h-KN-h1A">
-                                <rect key="frame" x="20" y="118" width="374" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.085792080480000005" green="0.1218790562" blue="0.21451391349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene1" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-qP-01C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Há muito, muito tempo atrás... muito antes mesmo da invencao do sal grosso " translatesAutoresizingMaskIntoConstraints="NO" id="34h-q9-4Ww">
-                                <rect key="frame" x="20" y="533" width="374" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Há muito, muito tempo atrás... muito antes mesmo da invenção do sal grosso " translatesAutoresizingMaskIntoConstraints="NO" id="34h-q9-4Ww">
+                                <rect key="frame" x="20" y="691" width="374" height="91"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,6 +32,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.022584071606073008" green="0.054242973898318801" blue="0.10470796835542928" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rB7-qP-01C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5dc-cb-Wqn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rB7-qP-01C" secondAttribute="trailing" id="7Lk-rP-zYf"/>
+                            <constraint firstItem="34h-q9-4Ww" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8bA-qs-deF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rB7-qP-01C" secondAttribute="bottom" id="CEf-JZ-TIY"/>
+                            <constraint firstItem="34h-q9-4Ww" firstAttribute="centerX" secondItem="rB7-qP-01C" secondAttribute="centerX" id="UPL-tN-1Lh"/>
+                            <constraint firstItem="34h-q9-4Ww" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="647" id="W72-HS-JxH"/>
+                            <constraint firstItem="rB7-qP-01C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WKG-8g-uzN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="34h-q9-4Ww" secondAttribute="bottom" constant="80" id="uHc-ne-q6L"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,14 +128,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:xMI-p4-LtS:image" translatesAutoresizingMaskIntoConstraints="NO" id="xMI-p4-LtS">
-                                <rect key="frame" x="20" y="115" width="374" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.085792080480000005" green="0.1218790562" blue="0.21451391349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Fastasmas habitavam         entre nós" translatesAutoresizingMaskIntoConstraints="NO" id="Bjw-Mh-uRP">
-                                <rect key="frame" x="13" y="525" width="374" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Fastasmas habitavam         entre nós" translatesAutoresizingMaskIntoConstraints="NO" id="Bjw-Mh-uRP">
+                                <rect key="frame" x="20" y="713" width="374" height="246"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,15 +137,28 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene2" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-SA-5VU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Oag-j9-XqZ"/>
                         <color key="backgroundColor" red="0.016478370879999999" green="0.053762383759999997" blue="0.109810032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Bjw-Mh-uRP" firstAttribute="top" secondItem="Oag-j9-XqZ" secondAttribute="top" constant="669" id="APJ-C6-AXx"/>
+                            <constraint firstAttribute="bottom" secondItem="2Oa-SA-5VU" secondAttribute="bottom" id="GuP-IR-tM6"/>
+                            <constraint firstItem="2Oa-SA-5VU" firstAttribute="top" secondItem="zgA-iT-PeG" secondAttribute="topMargin" constant="-44" id="Pmt-vB-lON"/>
+                            <constraint firstItem="Bjw-Mh-uRP" firstAttribute="leading" secondItem="zgA-iT-PeG" secondAttribute="leadingMargin" id="Vzd-xB-sQq"/>
+                            <constraint firstItem="2Oa-SA-5VU" firstAttribute="leading" secondItem="Oag-j9-XqZ" secondAttribute="leading" id="YCm-Y6-mGI"/>
+                            <constraint firstItem="2Oa-SA-5VU" firstAttribute="centerX" secondItem="Bjw-Mh-uRP" secondAttribute="centerX" id="g2B-WW-oDC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bjw-Mh-uRP" secondAttribute="bottom" constant="-97" id="rR0-Ie-s5Z"/>
+                            <constraint firstItem="2Oa-SA-5VU" firstAttribute="centerX" secondItem="zgA-iT-PeG" secondAttribute="centerX" id="xlU-1w-wIB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5MI-GE-jbr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBY-Gn-pmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="131"/>
+            <point key="canvasLocation" x="800.00000000000011" y="130.58035714285714"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wjm-nv-3ig">
@@ -154,40 +168,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:MEK-tT-SYi:image" translatesAutoresizingMaskIntoConstraints="NO" id="MEK-tT-SYi">
-                                <rect key="frame" x="20" y="111" width="374" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.085792080480000005" green="0.1218790562" blue="0.21451391349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="O passatempo preferido deles?" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-MR-hqk">
-                                <rect key="frame" x="20" y="502" width="374" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="O passatempo preferido deles?" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-MR-hqk">
+                                <rect key="frame" x="20" y="738" width="374" height="70"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1lo-nR-xpB"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="scene3" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-3c-TcR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="629"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AnY-LV-5G3"/>
                         <color key="backgroundColor" red="0.0087328469379999996" green="0.053653515880000002" blue="0.1137320027" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EFb-MR-hqk" firstAttribute="trailing" secondItem="Fo2-CZ-prg" secondAttribute="trailingMargin" id="ilM-2T-frR"/>
+                            <constraint firstItem="EFb-MR-hqk" firstAttribute="centerX" secondItem="z5a-3c-TcR" secondAttribute="centerX" id="nje-qg-wc8"/>
+                            <constraint firstItem="EFb-MR-hqk" firstAttribute="leading" secondItem="Fo2-CZ-prg" secondAttribute="leadingMargin" id="tqu-3i-ara"/>
+                            <constraint firstItem="AnY-LV-5G3" firstAttribute="bottom" secondItem="EFb-MR-hqk" secondAttribute="bottom" constant="54" id="ubq-DL-JNQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhe-yS-OeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="131"/>
+            <point key="canvasLocation" x="1457.9710144927537" y="130.58035714285714"/>
         </scene>
     </scenes>
     <resources>
         <image name="Meter" width="125" height="127.5"/>
-        <image name="imageView:MEK-tT-SYi:image" width="1092" height="1138"/>
-        <image name="imageView:xMI-p4-LtS:image" width="128" height="128"/>
         <image name="parede" width="190" height="406"/>
         <image name="porta" width="190" height="406"/>
+        <image name="scene1" width="190" height="406"/>
+        <image name="scene2" width="190" height="406"/>
+        <image name="scene3" width="190" height="278.5"/>
         <image name="soul countter" width="57" height="58.5"/>
         <image name="talkingbaloon" width="175" height="75"/>
-        <image name="temporaria1" width="1092" height="1138"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
