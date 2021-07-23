@@ -30,6 +30,10 @@ class ModelSingleton {
         "..."
     ]
     
+    var firstChapterDialogue: [MonsterTalk] = [
+        MonsterTalk(monsterImageName: "", defaultDialogue: [Dialogue(dialogueOwner: .wraith, text: "")])
+    ]
+    
     var doors: [Door] = [
         Door(kidImageName: "",
              ghostImageName: "",
@@ -41,7 +45,6 @@ class ModelSingleton {
              ])
     ]
 }
-
 
 struct Dialogue {
     var dialogueOwner: DialogueOwner
@@ -62,8 +65,63 @@ class Door {
     var scareDialogue: [Dialogue]
 }
 
-enum DialogueOwner {
-    case ghost
-    case kid
+class MonsterTalk {
+    internal init(monsterImageName: String, defaultDialogue: [Dialogue]) {
+        self.monsterImageName = monsterImageName
+        self.defaultDialogue = defaultDialogue
+    }
+    var monsterImageName: String
+    var defaultDialogue: [Dialogue]
 }
 
+enum DialogueOwner {
+    case ghost
+    case wraith
+    case poltergeist
+    case jinn
+    case ameno
+    case irina
+    case jipo
+    case kuka
+    case kid
+    
+    var whoIsTalking: String {
+        switch self {
+        case .wraith:
+            return "Wraith"
+        case .poltergeist:
+            return "Poltergheist"
+        case .irina:
+            return "Jinn"
+        case .jipo:
+            return "Jipo"
+        case .kuka:
+            return "Kuka"
+        case .ghost:
+            return "Ghost"
+        case .jinn:
+            return "Jinn"
+        case .ameno:
+            return "Ameno"
+        case .kid:
+            return "DefaultKid"
+        }
+    }
+}
+
+enum GhostStatus {
+    case neutral
+    case good
+    case bad
+    
+    var isGhostPersonality: String {
+        switch self {
+        case .good:
+            return "GoodGhost"
+        case .bad:
+            return "BadGhost"
+        default:
+            return "NeutralGhost"
+        }
+    }
+}

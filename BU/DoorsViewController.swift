@@ -21,25 +21,25 @@ class DoorsViewController:
     }
     
     @IBAction func doorTwoTapped(_ sender: Any) {
-        presentDoor(door: ModelSingleton.shared.doors[1])
+        presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
     @IBAction func doorThreeTapped(_ sender: Any) {
-        presentDoor(door: ModelSingleton.shared.doors[2])
+        presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
     
     @IBAction func doorFourTapped(_ sender: Any) {
-        presentDoor(door: ModelSingleton.shared.doors[3])
+        presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
     @IBAction func doorFiveTapped(_ sender: Any) {
-        presentDoor(door: ModelSingleton.shared.doors[4])
+        presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
     
     @IBAction func doorSixTapped(_ sender: Any) {
-        presentDoor(door: ModelSingleton.shared.doors[5])
+        presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
     func presentDoor(door: Door) {
@@ -50,7 +50,6 @@ class DoorsViewController:
         doorVC.setup(door: door)
         present(doorVC, animated: true, completion: nil)
     }
-
 }
 
 
