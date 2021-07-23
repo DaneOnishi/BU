@@ -20,6 +20,28 @@ class DoorsViewController:
         presentDoor(door: ModelSingleton.shared.doors[0])
     }
     
+    @IBAction func doorTwoTapped(_ sender: Any) {
+        presentDoor(door: ModelSingleton.shared.doors[1])
+    }
+    
+    @IBAction func doorThreeTapped(_ sender: Any) {
+        presentDoor(door: ModelSingleton.shared.doors[2])
+    }
+    
+    
+    @IBAction func doorFourTapped(_ sender: Any) {
+        presentDoor(door: ModelSingleton.shared.doors[3])
+    }
+    
+    @IBAction func doorFiveTapped(_ sender: Any) {
+        presentDoor(door: ModelSingleton.shared.doors[4])
+    }
+    
+    
+    @IBAction func doorSixTapped(_ sender: Any) {
+        presentDoor(door: ModelSingleton.shared.doors[5])
+    }
+    
     func presentDoor(door: Door) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let doorVC = storyboard.instantiateViewController(identifier: "DoorViewController") as? DoorViewController else {
@@ -28,6 +50,7 @@ class DoorsViewController:
         doorVC.setup(door: door)
         present(doorVC, animated: true, completion: nil)
     }
+
 }
 
 

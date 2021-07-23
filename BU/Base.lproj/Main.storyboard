@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene1" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-qP-01C">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scene1" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-qP-01C">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Há muito, muito tempo atrás... muito antes mesmo da invenção do sal grosso " translatesAutoresizingMaskIntoConstraints="NO" id="34h-q9-4Ww">
@@ -71,17 +71,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="talkingbaloon" translatesAutoresizingMaskIntoConstraints="NO" id="U96-Fk-a78">
-                                <rect key="frame" x="36" y="678" width="322" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Room-Background" translatesAutoresizingMaskIntoConstraints="NO" id="TbO-r9-52k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="labelzao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkx-qq-8ei">
-                                <rect key="frame" x="186" y="739" width="64" height="21"/>
+                                <rect key="frame" x="186" y="739" width="64" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-YL-sQG">
+                                <rect key="frame" x="1" y="47" width="254" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soul-Counter" translatesAutoresizingMaskIntoConstraints="NO" id="VLz-1L-KFg">
+                                <rect key="frame" x="199" y="65" width="194" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="talkingbaloon" translatesAutoresizingMaskIntoConstraints="NO" id="U96-Fk-a78">
+                                <rect key="frame" x="20" y="671" width="373" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f3M-oT-96C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,57 +114,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parede" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-0b-UKL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="parede" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-0b-UKL">
                                 <rect key="frame" x="-5" y="-51" width="426" height="1013"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="gaz-nW-SgB">
-                                <rect key="frame" x="-45" y="195" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="GC3-Xu-HVm">
-                                <rect key="frame" x="87" y="195" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="EaL-30-n3Y">
-                                <rect key="frame" x="216" y="195" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="CzP-kp-FFW">
-                                <rect key="frame" x="-45" y="425" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="Du8-EK-3Nz">
-                                <rect key="frame" x="87" y="425" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porta" translatesAutoresizingMaskIntoConstraints="NO" id="qQK-N0-aIq">
-                                <rect key="frame" x="216" y="425" width="253" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter" translatesAutoresizingMaskIntoConstraints="NO" id="Vxa-y2-YgR">
-                                <rect key="frame" x="-99" y="12" width="451" height="224"/>
+                                <rect key="frame" x="11" y="55" width="254" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soul countter" translatesAutoresizingMaskIntoConstraints="NO" id="Qvn-hi-Vkx">
-                                <rect key="frame" x="194" y="81" width="205" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="talkingbaloon" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-Ss-qBB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Baloon" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-Ss-qBB">
                                 <rect key="frame" x="16" y="668" width="378" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lB-j2-COp">
-                                <rect key="frame" x="58" y="340" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lB-j2-COp">
+                                <rect key="frame" x="24" y="260" width="115" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
                                 <connections>
                                     <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="WnX-AA-hv4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjC-sD-i9Y">
+                                <rect key="frame" x="150" y="260" width="115" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="5Vj-HC-uz1"/>
+                                    <action selector="doorTwoTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="8Id-Ht-GP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUh-9a-gcU">
+                                <rect key="frame" x="277" y="259" width="115" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="JMl-ea-26T"/>
+                                    <action selector="doorThreeTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="kbL-7f-Mvw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-3u-uHB">
+                                <rect key="frame" x="24" y="490" width="115" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="doorFourTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="9N6-8b-vlV"/>
+                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="Wre-3S-zeF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woL-q6-dBk">
+                                <rect key="frame" x="150" y="490" width="115" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="doorFiveTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="Qfn-UG-KtN"/>
+                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="QgT-8a-9xu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j4-7f-Btl">
+                                <rect key="frame" x="277" y="489" width="115" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" title="Button" image="porta">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="fNz-gr-2m6"/>
+                                    <action selector="doorSixTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="hAd-EZ-FPw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soul-Counter" translatesAutoresizingMaskIntoConstraints="NO" id="Qvn-hi-Vkx">
+                                <rect key="frame" x="209" y="73" width="194" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bfr-2n-A72"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7w8-0b-UKL" firstAttribute="leading" secondItem="NyJ-lO-qij" secondAttribute="leading" id="2Et-y1-OHR"/>
+                            <constraint firstAttribute="bottom" secondItem="7w8-0b-UKL" secondAttribute="bottom" id="Hkc-Ak-HSg"/>
+                            <constraint firstItem="7w8-0b-UKL" firstAttribute="top" secondItem="NyJ-lO-qij" secondAttribute="top" id="KiW-o9-s3K"/>
+                            <constraint firstAttribute="trailing" secondItem="7w8-0b-UKL" secondAttribute="trailing" id="vBy-J1-lIg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcc-oC-Icy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -176,7 +232,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene2" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-SA-5VU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scene2" translatesAutoresizingMaskIntoConstraints="NO" id="2Oa-SA-5VU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
@@ -219,7 +275,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scene3" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-3c-TcR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scene3" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-3c-TcR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="629" id="BBB-eg-ddM"/>
@@ -244,13 +300,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Meter" width="125" height="127.5"/>
+        <image name="Meter" width="94" height="66.5"/>
+        <image name="Room-Background" width="190" height="406"/>
+        <image name="Scene1" width="190" height="406"/>
+        <image name="Scene2" width="190" height="406"/>
+        <image name="Scene3" width="190" height="278.5"/>
+        <image name="Soul-Counter" width="56.5" height="57"/>
+        <image name="Talking-Baloon" width="175" height="75"/>
         <image name="parede" width="190" height="406"/>
-        <image name="porta" width="190" height="406"/>
-        <image name="scene1" width="190" height="406"/>
-        <image name="scene2" width="190" height="406"/>
-        <image name="scene3" width="190" height="278.5"/>
-        <image name="soul countter" width="57" height="58.5"/>
+        <image name="porta" width="606.5" height="969"/>
         <image name="talkingbaloon" width="175" height="75"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

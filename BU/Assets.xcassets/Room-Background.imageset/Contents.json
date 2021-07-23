@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Meter.png",
+      "filename" : "Room-Background.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Meter-1.png",
+      "filename" : "Room-Background-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Meter-2.png",
+      "filename" : "Room-Background-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
