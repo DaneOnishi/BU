@@ -55,13 +55,31 @@
                     <view key="view" contentMode="scaleToFill" id="Y3r-Bw-WaA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundflorest" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-dv-EKn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXw-q6-hUH">
+                                <rect key="frame" x="20" y="259" width="374" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="JE8-EG-dX7">
+                                <rect key="frame" x="16" y="653" width="378" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Balloon-2" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-SS-U3J">
+                                <rect key="frame" x="20" y="96" width="374" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tl1-74-KLP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqV-F6-5xs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="810"/>
+            <point key="canvasLocation" x="95.652173913043484" y="809.59821428571422"/>
         </scene>
         <!--Door View Controller-->
         <scene sceneID="xAT-Na-6K1">
@@ -82,16 +100,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-YL-sQG">
-                                <rect key="frame" x="1" y="47" width="254" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soul-Counter" translatesAutoresizingMaskIntoConstraints="NO" id="VLz-1L-KFg">
-                                <rect key="frame" x="199" y="65" width="194" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="talkingbaloon" translatesAutoresizingMaskIntoConstraints="NO" id="U96-Fk-a78">
                                 <rect key="frame" x="20" y="671" width="373" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Balloon-2" translatesAutoresizingMaskIntoConstraints="NO" id="QjI-xx-A4n">
+                                <rect key="frame" x="20" y="51" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -114,14 +128,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="parede" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-0b-UKL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Wall" translatesAutoresizingMaskIntoConstraints="NO" id="7w8-0b-UKL">
                                 <rect key="frame" x="-5" y="-51" width="426" height="1013"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter" translatesAutoresizingMaskIntoConstraints="NO" id="Vxa-y2-YgR">
-                                <rect key="frame" x="11" y="55" width="254" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Baloon" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-Ss-qBB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Talking-Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="4Bw-Ss-qBB">
                                 <rect key="frame" x="16" y="668" width="378" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -129,7 +139,7 @@
                                 <rect key="frame" x="24" y="260" width="115" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -140,7 +150,7 @@
                                 <rect key="frame" x="150" y="260" width="115" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -152,7 +162,7 @@
                                 <rect key="frame" x="277" y="259" width="115" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -164,7 +174,7 @@
                                 <rect key="frame" x="24" y="490" width="115" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -176,7 +186,7 @@
                                 <rect key="frame" x="150" y="490" width="115" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -188,7 +198,7 @@
                                 <rect key="frame" x="277" y="489" width="115" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
-                                <state key="normal" title="Button" image="porta">
+                                <state key="normal" title="Button" image="Door">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -196,8 +206,12 @@
                                     <action selector="doorSixTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="hAd-EZ-FPw"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soul-Counter" translatesAutoresizingMaskIntoConstraints="NO" id="Qvn-hi-Vkx">
-                                <rect key="frame" x="209" y="73" width="194" height="108"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Meter" translatesAutoresizingMaskIntoConstraints="NO" id="MjL-bG-pC3">
+                                <rect key="frame" x="0.0" y="97" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soul-Counter" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-i8-6oY">
+                                <rect key="frame" x="237" y="92" width="152" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -300,15 +314,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Meter" width="94" height="66.5"/>
+        <image name="Door" width="606.5" height="969"/>
+        <image name="Meter" width="95" height="65"/>
         <image name="Room-Background" width="190" height="406"/>
         <image name="Scene1" width="190" height="406"/>
         <image name="Scene2" width="190" height="406"/>
         <image name="Scene3" width="190" height="278.5"/>
-        <image name="Soul-Counter" width="56.5" height="57"/>
-        <image name="Talking-Baloon" width="175" height="75"/>
-        <image name="parede" width="190" height="406"/>
-        <image name="porta" width="606.5" height="969"/>
+        <image name="Soul-Counter" width="60" height="60"/>
+        <image name="Talking-Balloon" width="175" height="75"/>
+        <image name="Talking-Balloon-2" width="175" height="75"/>
+        <image name="Wall" width="190" height="406"/>
+        <image name="backgroundflorest" width="190" height="406"/>
         <image name="talkingbaloon" width="175" height="75"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

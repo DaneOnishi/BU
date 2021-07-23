@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "meter.png",
+      "filename" : "Kuka.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "meter-1.png",
+      "filename" : "Kuka-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "meter-2.png",
+      "filename" : "Kuka-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "soul counter.png",
+      "filename" : "Jipo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "soul counter-1.png",
+      "filename" : "Jipo-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "soul counter-2.png",
+      "filename" : "Jipo-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
