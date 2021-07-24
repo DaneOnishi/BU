@@ -17,6 +17,7 @@
 		41290AC526AA7CB300AA4F00 /* DoorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */; };
 		41290AC726AA7DFA00AA4F00 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */; };
 		41290AC926AB235800AA4F00 /* FirstChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AC826AB235800AA4F00 /* FirstChapterViewController.swift */; };
+		41290ACB26ACD08800AA4F00 /* CutSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290ACA26ACD08700AA4F00 /* CutSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorsViewController.swift; sourceTree = "<group>"; };
 		41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		41290AC826AB235800AA4F00 /* FirstChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChapterViewController.swift; sourceTree = "<group>"; };
+		41290ACA26ACD08700AA4F00 /* CutSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutSceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				41290AC426AA7CB300AA4F00 /* DoorsViewController.swift */,
 				41290AC626AA7DFA00AA4F00 /* DoorViewController.swift */,
 				41290AC826AB235800AA4F00 /* FirstChapterViewController.swift */,
+				41290ACA26ACD08700AA4F00 /* CutSceneViewController.swift */,
 			);
 			path = BU;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41290ACB26ACD08800AA4F00 /* CutSceneViewController.swift in Sources */,
 				41290AB326A9B2C000AA4F00 /* ViewController.swift in Sources */,
 				41290AC926AB235800AA4F00 /* FirstChapterViewController.swift in Sources */,
 				41290AAF26A9B2C000AA4F00 /* AppDelegate.swift in Sources */,

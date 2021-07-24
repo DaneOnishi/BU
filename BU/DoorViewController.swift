@@ -14,6 +14,8 @@ class DoorViewController: UIViewController {
     
     @IBOutlet weak var ghostDialogueLabel: UILabel!
     @IBOutlet weak var talkingBalloon: UIImageView!
+    @IBOutlet weak var userOptionContinue: UIButton!
+    @IBOutlet weak var userOptionScare: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class DoorViewController: UIViewController {
         ghostDialogueLabel.text = door.defaultDialogue[0].text
         
         talkingBalloon.image = UIImage(named: door.ghostImageName)
+    
     }
     
     func setup(door: Door) {

@@ -11,8 +11,9 @@ class ModelSingleton {
     static let shared = ModelSingleton()
     private init() {}
     
-    var soulPoints = 0
-  
+    var soulPoints = "0"
+    var internalPoints = 0
+    
     var text: [String] = [
         "Então novato é o primeiro dia do novo membro novo no grupo",
         "De onde você veio?",
@@ -119,12 +120,11 @@ enum GhostStatus {
     var ghostPersonality: String {
         switch self {
         case .good:
-            return "GoodGhost"
+            return "Nice-Talking-Balloon"
         case .bad:
-            return "BadGhost"
+            return "Scary-Talking-Balloon"
         default:
-            return "NeutralGhost"
+            return "Talking-Balloon"
         }
     }
-    
 }
