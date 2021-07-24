@@ -10,8 +10,10 @@ import UIKit
 class DoorViewController: UIViewController {
     
     var door: Door?
+    var soulPoints = 0
     
     @IBOutlet weak var ghostDialogueLabel: UILabel!
+    @IBOutlet weak var talkingBalloon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,8 @@ class DoorViewController: UIViewController {
         
         guard let door = door else{ return }
         ghostDialogueLabel.text = door.defaultDialogue[0].text
+        
+        talkingBalloon.image = UIImage(named: door.ghostImageName)
     }
     
     func setup(door: Door) {

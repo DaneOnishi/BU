@@ -43,12 +43,23 @@ class DoorsViewController:
     }
     
     func presentDoor(door: Door) {
+        let soulPoints = ModelSingleton.shared.soulPoints
+        
+        if soulPoints >= 4 {
+            door.ghostImageName = ""
+        } else if soulPoints <= 4 {
+            door.ghostImageName = ""
+        } else {
+            door.ghostImageName = ""
+        }
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let doorVC = storyboard.instantiateViewController(identifier: "DoorViewController") as? DoorViewController else {
             return
         }
         doorVC.setup(door: door)
         present(doorVC, animated: true, completion: nil)
+        
     }
 }
 
