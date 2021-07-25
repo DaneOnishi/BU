@@ -31,6 +31,12 @@ class DoorViewController: UIViewController {
         kidImageView.image = UIImage(named: door.kidImageName)
         
         presentNextDialogue()
+        
+        if ModelSingleton.shared.karma >= 4 {
+            scare()
+        }
+        // se malvado
+        // chama scare
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,11 +53,19 @@ class DoorViewController: UIViewController {
     }
     
     func updateViewToDialogue(dialogue: Dialogue) {
+        userOptionContinue.isEnabled = false
+        userOptionScare.isEnabled = false
         switch dialogue.dialogueOwner {
         case .ghost:
-            ghostDialogueLabel.text = dialogue.text
+            ghostDialogueLabel.animate(newText: dialogue.text, characterDelay: 0.06) {
+                self.userOptionContinue.isEnabled = true
+                self.userOptionScare.isEnabled = !self.scared
+            }
         default:
-            kidDialogueLabel.text = dialogue.text
+            kidDialogueLabel.animate(newText: dialogue.text, characterDelay: 0.06) {
+                self.userOptionContinue.isEnabled = true
+                self.userOptionScare.isEnabled = !self.scared
+            }
         }
     }
     
@@ -64,13 +78,18 @@ class DoorViewController: UIViewController {
         updateViewToDialogue(dialogue: dialogues.removeFirst())
     }
     
-    @IBAction func scarePressed(_ sender: Any) {
+    fileprivate func scare() {
         dialogues = door?.scareDialogue ?? []
         scared = true
-        presentNextDialogue()
         
         userOptionScare.isEnabled = false
         userOptionScare.alpha = 0.3
+    }
+    
+    @IBAction func scarePressed(_ sender: Any) {
+        scare()
+        
+        presentNextDialogue()
     }
     
     @IBAction func continuePressed(_ sender: Any) {

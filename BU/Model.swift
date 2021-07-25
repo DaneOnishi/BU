@@ -12,7 +12,6 @@ class ModelSingleton {
     private init() {}
     
     var karma = 0
-    
     var soulPoints = 0
     
     var meterImageName: String {
@@ -71,6 +70,79 @@ class ModelSingleton {
                 Dialogue(dialogueOwner: .jipo, text: "esse e aquele meme do fala derek?"),
                 Dialogue(dialogueOwner: .ghost, text: "??????"),
                 Dialogue(dialogueOwner: .jipo, text: "HAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHA"),
+             ]),
+        
+        Door(kidImageName: "Irina",
+             ghostImageName: "Talking-Balloon",
+             defaultDialogue: [
+                Dialogue(dialogueOwner: .irina, text: "Rato, esgoto, aaaaaa"),
+                Dialogue(dialogueOwner: .irina, text: "comi meu cachorro"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .irina, text: "aiaiaiai uiuiui")
+             ],
+             scareDialogue: [
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .irina, text: "AAAAAAAAAAAAAA"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .irina, text: "HAHAHAHHAHAHAHAHHAHAHAHA"),
+             ]),
+        
+        Door(kidImageName: "Kuka",
+             ghostImageName: "Talking-Balloon",
+             defaultDialogue: [
+                Dialogue(dialogueOwner: .kuka, text: "KukaoJungoKUka"),
+                Dialogue(dialogueOwner: .kuka, text: "IAIAIAUIAUIAUIAUIA"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .kuka, text: "aiaiaiai uiuiui")
+             ],
+             scareDialogue: [
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .kuka, text: "AAAAAAAAAAAAAA"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .kuka, text: "HAHAHAHHAHAHAHAHHA"),
+             ]),
+        
+        Door(kidImageName: "Ameno",
+             ghostImageName: "Talking-Balloon",
+             defaultDialogue: [
+                Dialogue(dialogueOwner: .ameno, text: "amenooJungoameno"),
+                Dialogue(dialogueOwner: .ameno, text: "IAIAIAUIAUIAUIAUIA"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .ameno, text: "aiaiaiai uiuiui")
+             ],
+             scareDialogue: [
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .ameno, text: "AAAAAAAAAAAAAA"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .ameno, text: "HAHAHAHHAHAHAHAHHAHAHAHAH"),
+             ]),
+        Door(kidImageName: "Kuka",
+             ghostImageName: "Talking-Balloon",
+             defaultDialogue: [
+                Dialogue(dialogueOwner: .kuka, text: "KukaoJungoKUka"),
+                Dialogue(dialogueOwner: .kuka, text: "IAIAIAUIAUIAUIAUIA"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .kuka, text: "aiaiaiai uiuiui")
+             ],
+             scareDialogue: [
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .kuka, text: "AAAAAAAAAAAAAA"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .kuka, text: "HAHAHAHH"),
+             ]),
+        Door(kidImageName: "Kuka",
+             ghostImageName: "Talking-Balloon",
+             defaultDialogue: [
+                Dialogue(dialogueOwner: .kuka, text: "KukaoJungoKUka"),
+                Dialogue(dialogueOwner: .kuka, text: "IAIAIAUIAUIAUIAUIA"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .kuka, text: "aiaiaiai uiuiui")
+             ],
+             scareDialogue: [
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .kuka, text: "AAAAAAAAAAAAAA"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .kuka, text: "HAHAHAHA A"),
              ])
     ]
     
@@ -84,11 +156,13 @@ class ModelSingleton {
     }
 }
 
+
 struct Dialogue {
     var dialogueOwner: DialogueOwner
     var text: String
+    
+    
 }
-
 class Door {
     internal init(kidImageName: String, ghostImageName: String, defaultDialogue: [Dialogue], scareDialogue: [Dialogue]) {
         self.kidImageName = kidImageName

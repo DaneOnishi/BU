@@ -8,6 +8,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="873-EU-o50">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreen" id="UbN-BM-S5x" customClass="MainScreenViewController" customModule="BU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Chl-6d-UcB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0V-ta-y9S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICo-jk-bSx">
+                                <rect key="frame" x="148" y="718" width="122" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Começar"/>
+                                <connections>
+                                    <action selector="startButton:" destination="UbN-BM-S5x" eventType="touchUpInside" id="udK-wc-s5Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0iw-hM-tUw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainScreenImage" destination="F0V-ta-y9S" id="Yk5-eV-9jJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8sg-TC-YnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565.21739130434787" y="130.58035714285714"/>
+        </scene>
         <!--Cut Scene View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -211,7 +244,7 @@
                                     <constraint firstAttribute="height" constant="148" id="5zT-uf-3r0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkx-qq-8ei">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkx-qq-8ei">
                                 <rect key="frame" x="160" y="724" width="209" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -519,7 +552,6 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="5Vj-HC-uz1"/>
                                                     <action selector="doorTwoTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="8Id-Ht-GP6"/>
                                                 </connections>
                                             </button>
@@ -533,7 +565,6 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="JMl-ea-26T"/>
                                                     <action selector="doorThreeTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="kbL-7f-Mvw"/>
                                                 </connections>
                                             </button>
@@ -557,7 +588,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="doorFourTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="9N6-8b-vlV"/>
-                                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="Wre-3S-zeF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woL-q6-dBk">
@@ -571,7 +601,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="doorFiveTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="Qfn-UG-KtN"/>
-                                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="QgT-8a-9xu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j4-7f-Btl">
@@ -584,7 +613,6 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="doorOneTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="fNz-gr-2m6"/>
                                                     <action selector="doorSixTapped:" destination="fb8-Em-g4l" eventType="touchUpInside" id="hAd-EZ-FPw"/>
                                                 </connections>
                                             </button>
