@@ -21,28 +21,8 @@ class DoorsViewController:
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let internalPoints = ModelSingleton.shared.internalPoints
-        var userOption: Bool
-        var scare = false
-        var continueConversation = true
-//        var meterOriginalSize = meter.position.x
-//        var originalMetterHeight = meterMiddle.size.height
-//        var originalMetterXScale = meterMiddle.xScale
-        
-//        if userOption == scare {
-//            soulCounterLabel += 1
-//            internalPoints += 1
-//
-//        } else if userOption == continueConversation {
-//            soulCounterLabel == soulCounterLabel
-//            internalPoints -= 1
-//
-//        } else {
-//            soulCounterLabel == soulCounterLabel
-//            internalPoints == internalPoints
-//
-//        }
-//        soulCounterLabel.text = ModelSingleton.shared.soulPoints
+        soulCounterLabel.text = ModelSingleton.shared.soulPoints.description
+        meterStatus.image = UIImage(named: ModelSingleton.shared.meterImageName)
     }
     
     @IBAction func doorOneTapped(_ sender: Any) {
@@ -72,17 +52,16 @@ class DoorsViewController:
     
     func presentDoor(door: Door) {
        // let soulPoints = ModelSingleton.shared.soulPoints
-        let internalPoints = ModelSingleton.shared.internalPoints
         
-        if internalPoints >= 4 {
+        if ModelSingleton.shared.soulPoints > 4 {
             door.ghostImageName = "Scary-Talking-Balloon"
-            playMusicScary()
-        } else if internalPoints <= 4 {
+           // playMusicScary()
+        } else if ModelSingleton.shared.karma < 0 {
             door.ghostImageName = "Nice-Talking-Balloon"
-            playMusicNice()
+        //    playMusicNice()
         } else {
             door.ghostImageName = "Talking-Balloon"
-            playMusicDefault()
+    //        playMusicDefault()
         }
         
         func playMusicDefault() {
@@ -115,29 +94,11 @@ class DoorsViewController:
           musicNice.play()
         }
         
-        
-        switch internalPoints {
-        case 1 :
-            meterStatus.image = UIImage(named: "Meter-1")
-        case 2:
-            meterStatus.image = UIImage(named: "Meter-2")
-        case 3:
-            meterStatus.image = UIImage(named: "Meter-3")
-        case 4:
-            meterStatus.image = UIImage(named: "Meter-4")
-        case 5:
-            meterStatus.image = UIImage(named: "Meter-4")
-        case 6:
-            meterStatus.image = UIImage(named: "Meter-5")
-        default:
-            meterStatus.image = UIImage(named: "Meter-initial")
-        }
-        
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let doorVC = storyboard.instantiateViewController(identifier: "DoorViewController") as? DoorViewController else {
             return
         }
+        doorVC.modalPresentationStyle = .fullScreen
         doorVC.setup(door: door)
         present(doorVC, animated: true, completion: nil)
     }

@@ -11,8 +11,28 @@ class ModelSingleton {
     static let shared = ModelSingleton()
     private init() {}
     
-    var soulPoints = "0"
-    var internalPoints = 0
+    var karma = 0
+    
+    var soulPoints = 0
+    
+    var meterImageName: String {
+        switch karma {
+        case (-100)...(-2):
+            return "Meter-1"
+        case -1:
+            return "Meter-2"
+        case 0:
+            return "Meter-3"
+        case 1:
+            return "Meter-4"
+        case 2:
+            return "Meter-5"
+        case 3...100:
+            return "Meter-6"
+        default:
+            return "Meter-initial"
+        }
+    }
     
     var text: [String] = [
         "Então novato é o primeiro dia do novo membro novo no grupo",
@@ -38,15 +58,30 @@ class ModelSingleton {
     ]
     
     var doors: [Door] = [
-        Door(kidImageName: "",
-             ghostImageName: "",
+        Door(kidImageName: "Jipo",
+             ghostImageName: "Talking-Balloon",
              defaultDialogue: [
-                Dialogue(dialogueOwner: .kid, text: "nada cringe este")
+                Dialogue(dialogueOwner: .jipo, text: "nada cringe este"),
+                Dialogue(dialogueOwner: .jipo, text: "comi meu cachorro"),
+                Dialogue(dialogueOwner: .ghost, text: "carai mermao"),
+                Dialogue(dialogueOwner: .jipo, text: "devi te me assustado lixpo")
              ],
              scareDialogue: [
-                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA")
+                Dialogue(dialogueOwner: .ghost, text: "HAHAHAHAHAHAHAHAHAHA"),
+                Dialogue(dialogueOwner: .jipo, text: "esse e aquele meme do fala derek?"),
+                Dialogue(dialogueOwner: .ghost, text: "??????"),
+                Dialogue(dialogueOwner: .jipo, text: "HAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHAHAHAHAHHA"),
              ])
     ]
+    
+    func didScareKid() {
+        karma += 1
+        soulPoints += 1
+    }
+    
+    func didNotScareKid() {
+        karma -= 1
+    }
 }
 
 struct Dialogue {
