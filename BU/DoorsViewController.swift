@@ -118,19 +118,19 @@ class DoorsViewController:
         
         switch internalPoints {
         case 1 :
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-1")
         case 2:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-2")
         case 3:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-3")
         case 4:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-4")
         case 5:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-4")
         case 6:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-5")
         default:
-            meterStatus.image = UIImage(named: "")
+            meterStatus.image = UIImage(named: "Meter-initial")
         }
         
         

@@ -25,7 +25,6 @@ class DoorViewController: UIViewController {
         ghostDialogueLabel.text = door.defaultDialogue[0].text
         
         talkingBalloon.image = UIImage(named: door.ghostImageName)
-    
     }
     
     func setup(door: Door) {

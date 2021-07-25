@@ -43,7 +43,8 @@ class CutSceneViewController: UIViewController {
                         return
                     }
                     firstChapterVC.modalPresentationStyle = .fullScreen
-                    self.present(firstChapterVC, animated: true, completion: nil)                }
+                    self.present(firstChapterVC, animated: true, completion: nil)
+                }
             }
         }
     }
