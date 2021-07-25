@@ -14,6 +14,8 @@ class DoorViewController: UIViewController {
     var dialogues: [Dialogue] = []
     
     var scared = false
+    var autoPlaying = false
+    
     
     @IBOutlet weak var ghostDialogueLabel: UILabel!
     @IBOutlet weak var talkingBalloon: UIImageView!
@@ -30,13 +32,12 @@ class DoorViewController: UIViewController {
         talkingBalloon.image = UIImage(named: door.ghostImageName)
         kidImageView.image = UIImage(named: door.kidImageName)
         
-        presentNextDialogue()
-        
         if ModelSingleton.shared.karma >= 4 {
-            scare()
+            startAutoplay()
+        } else {
+            presentNextDialogue()
         }
-        // se malvado
-        // chama scare
+      //:)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,30 +53,56 @@ class DoorViewController: UIViewController {
         dialogues = door.defaultDialogue
     }
     
-    func updateViewToDialogue(dialogue: Dialogue) {
+    fileprivate func checkReenableActions() {
+        self.userOptionContinue.isEnabled = !autoPlaying
+        self.userOptionScare.isEnabled = !self.scared && !autoPlaying
+    }
+    
+    func updateViewToDialogue(dialogue: Dialogue, completion: (() -> Void)? = nil) {
         userOptionContinue.isEnabled = false
         userOptionScare.isEnabled = false
         switch dialogue.dialogueOwner {
         case .ghost:
             ghostDialogueLabel.animate(newText: dialogue.text, characterDelay: 0.06) {
-                self.userOptionContinue.isEnabled = true
-                self.userOptionScare.isEnabled = !self.scared
+                self.checkReenableActions()
+                completion?()
             }
         default:
             kidDialogueLabel.animate(newText: dialogue.text, characterDelay: 0.06) {
-                self.userOptionContinue.isEnabled = true
-                self.userOptionScare.isEnabled = !self.scared
+                self.checkReenableActions()
+                completion?()
             }
         }
     }
     
-    fileprivate func presentNextDialogue() {
+    func startAutoplay() {
+        userOptionScare.isEnabled = false
+        userOptionContinue.isEnabled = false
+        autoPlaying = true
+        
+        presentNextDialogue {
+            self.scare()
+            self.eternalDialogue()
+        }
+    }
+    
+    func eternalDialogue() {
+        presentNextDialogue {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.eternalDialogue()
+            }
+        }
+    }
+    
+    fileprivate func presentNextDialogue(completion: (() -> Void)? = nil) {
         guard !dialogues.isEmpty else {
             dismiss(animated: true, completion: nil)
             return
         }
         
-        updateViewToDialogue(dialogue: dialogues.removeFirst())
+        updateViewToDialogue(dialogue: dialogues.removeFirst()) {
+            completion?()
+        }
     }
     
     fileprivate func scare() {
