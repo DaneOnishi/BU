@@ -18,9 +18,11 @@ class CutSceneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 0.6,
-                       delay: 6, // tempo que fica tela 1
+                       delay: 1, // tempo que fica tela 1
                        options: .curveEaseInOut) {
             self.sceneOneImage.alpha = 0
             self.sceneTwoImage.alpha = 1
@@ -29,20 +31,21 @@ class CutSceneViewController: UIViewController {
             
         } completion: { _ in
             UIView.animate(withDuration: 0.6,
-                           delay: 6, // tempo que fica tela 2
+                           delay: 1, // tempo que fica tela 2
                            options: .curveEaseInOut) {
                 self.sceneTwoImage.alpha = 0
                 self.sceneThreeImage.alpha = 1
                 self.sceneTwoText.alpha = 0
                 self.sceneThreeText.alpha = 1
             } completion: { _ in
-                DispatchQueue.main.asyncAfter(deadline: .now() + 6) { // tempo que fica tela 3
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { // tempo que fica tela 3
                     // ir para a prox tela
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     guard let firstChapterVC = storyboard.instantiateViewController(identifier: "FirstChapterViewController") as? FirstChapterViewController else {
                         return
                     }
                     firstChapterVC.modalPresentationStyle = .fullScreen
+                    firstChapterVC.monsterTalk = ModelSingleton.shared.monsterDialogues
                     self.present(firstChapterVC, animated: true, completion: nil)
                 }
             }

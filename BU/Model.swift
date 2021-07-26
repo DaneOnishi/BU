@@ -52,9 +52,7 @@ class ModelSingleton {
         "..."
     ]
     
-    var firstChapterDialogue: [MonsterTalk] = [
-        MonsterTalk(monsterImageName: "", defaultDialogue: [Dialogue(dialogueOwner: .wraith, text: "")])
-    ]
+  
     
     var doors: [Door] = [
         Door(kidImageName: "Jipo",
@@ -146,6 +144,10 @@ class ModelSingleton {
              ])
     ]
     
+    var monsterDialogues: MonsterTalk =
+        MonsterTalk(defaultDialogue: [Dialogue(dialogueOwner: .wraith, text: "mininadoCEUUU"), Dialogue(dialogueOwner: .wraith, text: "mininadoCEUUU"), Dialogue(dialogueOwner: .wraith, text: "mininadoCEUUU") ])
+    
+    
     func didScareKid() {
         karma += 1
         soulPoints += 1
@@ -156,13 +158,12 @@ class ModelSingleton {
     }
 }
 
-
 struct Dialogue {
     var dialogueOwner: DialogueOwner
     var text: String
-    
-    
 }
+
+
 class Door {
     internal init(kidImageName: String, ghostImageName: String, defaultDialogue: [Dialogue], scareDialogue: [Dialogue]) {
         self.kidImageName = kidImageName
@@ -178,11 +179,9 @@ class Door {
 }
 
 class MonsterTalk {
-    internal init(monsterImageName: String, defaultDialogue: [Dialogue]) {
-        self.monsterImageName = monsterImageName
+    internal init(defaultDialogue: [Dialogue]) {
         self.defaultDialogue = defaultDialogue
     }
-    var monsterImageName: String
     var defaultDialogue: [Dialogue]
 }
 

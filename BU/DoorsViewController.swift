@@ -46,7 +46,6 @@ class DoorsViewController:
         presentDoor(door: ModelSingleton.shared.doors[2])
     }
     
-    
     @IBAction func doorFourTapped(_ sender: Any) {
         presentDoor(door: ModelSingleton.shared.doors[3])
     }
@@ -60,7 +59,6 @@ class DoorsViewController:
     }
     
     func presentDoor(door: Door) {
-       // let soulPoints = ModelSingleton.shared.soulPoints
         
         if ModelSingleton.shared.soulPoints >= 4 {
             door.ghostImageName = "Scary-Talking-Balloon"
@@ -70,9 +68,7 @@ class DoorsViewController:
       
         } else {
             door.ghostImageName = "Talking-Balloon"
-  
         }
-        
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let doorVC = storyboard.instantiateViewController(identifier: "DoorViewController") as? DoorViewController else {
