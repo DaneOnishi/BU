@@ -16,6 +16,8 @@ class DoorsViewController:
     var musicScary: AVAudioPlayer!
     var musicNice: AVAudioPlayer!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -35,27 +37,39 @@ class DoorsViewController:
     }
     
     @IBAction func doorOneTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[0])
+        disableMyButton?.isEnabled = false
     }
     
     @IBAction func doorTwoTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[1])
+        disableMyButton?.isEnabled = false
     }
     
     @IBAction func doorThreeTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[2])
+        disableMyButton?.isEnabled = false
     }
     
     @IBAction func doorFourTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[3])
+        disableMyButton?.isEnabled = false
     }
     
     @IBAction func doorFiveTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[4])
+        disableMyButton?.isEnabled = false
     }
     
     @IBAction func doorSixTapped(_ sender: Any) {
+        var disableMyButton = sender as? UIButton
         presentDoor(door: ModelSingleton.shared.doors[5])
+        disableMyButton?.isEnabled = false
     }
     
     func presentDoor(door: Door) {

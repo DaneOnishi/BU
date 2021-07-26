@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainScreenViewController: UIViewController {
     
     @IBOutlet weak var mainScreenImage: UIImageView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

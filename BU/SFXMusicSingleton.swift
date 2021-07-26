@@ -28,13 +28,18 @@ class SFXMusicSingleton {
         self.currentPlayer = player
     }
     
+    func playMainMusic() {
+        playMusic(named: "Alien Imposter By HeatleyBros", with: ".mp3")
+        currentMusic = .principal
+    }
+    
     func playDefaultMusic() {
         playMusic(named: "HeatleyBros - Warp Portal", with: "mp3")
         currentMusic = .normal
     }
     
     func playScareMusic() {
-        playMusic(named: "HeatleyBros - Warp Portal", with: "mp3")
+        playMusic(named: "HeatleyBros - 8 Bit Nightmare", with: "mp3")
         currentMusic = .scare
     }
 }
@@ -43,4 +48,5 @@ class SFXMusicSingleton {
 enum Music {
     case normal
     case scare
+    case principal
 }

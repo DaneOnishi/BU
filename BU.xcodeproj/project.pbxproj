@@ -24,6 +24,8 @@
 		41290AD326AD303C00AA4F00 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AD226AD303C00AA4F00 /* MainScreenViewController.swift */; };
 		41290AD526ADE1E500AA4F00 /* SFXMusicSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41290AD426ADE1E500AA4F00 /* SFXMusicSingleton.swift */; };
 		41290AD726ADE4A200AA4F00 /* HeatleyBros - Warp Portal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41290AD626ADE4A200AA4F00 /* HeatleyBros - Warp Portal.mp3 */; };
+		41290ADA26AEA0E800AA4F00 /* HeatleyBros - 8 Bit Nightmare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41290AD926AEA0E700AA4F00 /* HeatleyBros - 8 Bit Nightmare.mp3 */; };
+		41290ADC26AEA0F400AA4F00 /* Alien Imposter By HeatleyBros.wav in Resources */ = {isa = PBXBuildFile; fileRef = 41290ADB26AEA0F400AA4F00 /* Alien Imposter By HeatleyBros.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		41290AD226AD303C00AA4F00 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		41290AD426ADE1E500AA4F00 /* SFXMusicSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFXMusicSingleton.swift; sourceTree = "<group>"; };
 		41290AD626ADE4A200AA4F00 /* HeatleyBros - Warp Portal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HeatleyBros - Warp Portal.mp3"; sourceTree = "<group>"; };
+		41290AD926AEA0E700AA4F00 /* HeatleyBros - 8 Bit Nightmare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "HeatleyBros - 8 Bit Nightmare.mp3"; sourceTree = "<group>"; };
+		41290ADB26AEA0F400AA4F00 /* Alien Imposter By HeatleyBros.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Alien Imposter By HeatleyBros.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		41290AD826ADE4AA00AA4F00 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				41290AD926AEA0E700AA4F00 /* HeatleyBros - 8 Bit Nightmare.mp3 */,
+				41290ADB26AEA0F400AA4F00 /* Alien Imposter By HeatleyBros.wav */,
 				41290AD626ADE4A200AA4F00 /* HeatleyBros - Warp Portal.mp3 */,
 			);
 			path = Music;
@@ -166,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41290ABB26A9B2C200AA4F00 /* LaunchScreen.storyboard in Resources */,
+				41290ADA26AEA0E800AA4F00 /* HeatleyBros - 8 Bit Nightmare.mp3 in Resources */,
+				41290ADC26AEA0F400AA4F00 /* Alien Imposter By HeatleyBros.wav in Resources */,
 				41290AB826A9B2C200AA4F00 /* Assets.xcassets in Resources */,
 				41290AD726ADE4A200AA4F00 /* HeatleyBros - Warp Portal.mp3 in Resources */,
 				41290AB626A9B2C000AA4F00 /* Main.storyboard in Resources */,
